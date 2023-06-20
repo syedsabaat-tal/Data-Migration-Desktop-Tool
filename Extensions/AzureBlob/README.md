@@ -8,10 +8,12 @@ The Azure Blob Storage extension provides writing of formatted files to Azure Bl
 
 Sink settings require all parameters shown below. An optional `MaxBlockSizeInKB` parameter can also be specified to control the transfer.
 
+Possible values for `"Sink"` name property are `"JSON-AzureBlob(beta)"` and `"Parquet-AzureBlob(beta)"`.
+
 ### Sink
 
 ```json
-{
+"SinkProperties" : {
     "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=...",
     "ContainerName": "",
     "BlobName": "",
